@@ -18,7 +18,7 @@ class Coordinator: NSObject, ARSessionDelegate {
         guard let view = self.view else { return }
         let tapLocation = recognizer.location(in: view)
         if let entity = view.entity(at: tapLocation) as? ModelEntity {
-            let materal = SimpleMaterial(color: .yellow, isMetallic: true)
+            let materal = SimpleMaterial(color: UIColor.random(), isMetallic: true)
             entity.model?.materials = [materal]
         }
     }
