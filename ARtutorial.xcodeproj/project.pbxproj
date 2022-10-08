@@ -15,6 +15,7 @@
 		18A14C0428F13FED00CF17A2 /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14C0328F13FED00CF17A2 /* Cordinator.swift */; };
 		18A14C0628F14ADE00CF17A2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A14C0528F14ADE00CF17A2 /* UIColor+Extension.swift */; };
 		18A14C0828F15B3E00CF17A2 /* shoe.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18A14C0728F15B3E00CF17A2 /* shoe.usdz */; };
+		18A14C0A28F1671C00CF17A2 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18A14C0928F1671C00CF17A2 /* teapot.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		18A14C0328F13FED00CF17A2 /* Cordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinator.swift; sourceTree = "<group>"; };
 		18A14C0528F14ADE00CF17A2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		18A14C0728F15B3E00CF17A2 /* shoe.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = shoe.usdz; sourceTree = "<group>"; };
+		18A14C0928F1671C00CF17A2 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		18A14C0C28F16AC300CF17A2 /* LunarRover.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = LunarRover.reality; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				18791E5C28F0F182009A0A98 /* AppDelegate.swift */,
 				18791E5E28F0F182009A0A98 /* ContentView.swift */,
 				18A14C0528F14ADE00CF17A2 /* UIColor+Extension.swift */,
+				18A14C0928F1671C00CF17A2 /* teapot.usdz */,
+				18A14C0C28F16AC300CF17A2 /* LunarRover.reality */,
 				18A14C0728F15B3E00CF17A2 /* shoe.usdz */,
 				18A14C0328F13FED00CF17A2 /* Cordinator.swift */,
 				18791E6028F0F182009A0A98 /* Experience.rcproject */,
@@ -137,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A14C0A28F1671C00CF17A2 /* teapot.usdz in Resources */,
 				18791E6628F0F183009A0A98 /* Preview Assets.xcassets in Resources */,
 				18A14C0828F15B3E00CF17A2 /* shoe.usdz in Resources */,
 				18791E6328F0F183009A0A98 /* Assets.xcassets in Resources */,
