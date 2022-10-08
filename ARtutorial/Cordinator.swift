@@ -17,9 +17,16 @@ class Coordinator: NSObject, ARSessionDelegate {
         print("updateUIView")
         guard let view = self.view else { return }
         let tapLocation = recognizer.location(in: view)
-        if let entity = view.entity(at: tapLocation) as? ModelEntity {
-            let materal = SimpleMaterial(color: UIColor.random(), isMetallic: true)
-            entity.model?.materials = [materal]
+        let results = view.raycast(from: tapLocation, allowing: .estimatedPlane, alignment: .horizontal)
+        if let result = results.first {
+            let anchor = ARAnchor(name: "Plane Anchor", transform: result.worldTransform)
+            view.session.add(anchor: anchor)
+            
+            let modelEntity =  ModelEntity(mesh: MeshResource.generateBox(size: 0.3), materials: [SimpleMaterial(color: .blue, isMetallic: true)])
+            
+            let anchorEntity = AnchorEntity(anchor: anchor)
+            anchorEntity.addChild(modelEntity)
+            view.scene.addAnchor(anchorEntity)
         }
     }
 }
